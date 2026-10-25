@@ -1,0 +1,17 @@
+name: LoupGarou
+version: 2.0.0
+main: com.chokapeak.loupgarou.LoupGarou
+api-version: '1.21'
+author: chokapeak
+description: Plugin Loup-Garou complet avec rôles, votes, maire et gestion des nuits
+
+commands:
+  lg:
+    description: Commande principale du Loup-Garou
+    usage: /lg <start|night|day|vote|maire>
+    permission: loupgarou.admin
+
+permissions:
+  loupgarou.admin:
+    description: Autorise la gestion de la partie Loup-Garou
+    default: op
