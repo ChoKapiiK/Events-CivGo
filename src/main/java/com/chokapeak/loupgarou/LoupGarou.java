@@ -240,7 +240,8 @@ public final class LoupGarou extends JavaPlugin implements CommandExecutor, List
         String title = event.getView().getTitle();
         if (!title.contains("Tribunal - Voter") && !title.contains("Voter pour le Maire")) return;
 
-        event.setCancelled();
+        event.setCancelled(true);
+
         if (!(event.getWhoClicked() instanceof Player voter)) return;
         ItemStack clicked = event.getCurrentItem();
         if (clicked == null || clicked.getType() != Material.PLAYER_HEAD) return;
